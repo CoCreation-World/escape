@@ -8,7 +8,7 @@ import { checkPlayerMaterial, mySound, playRandomSound } from "./footstep";
 WA.onInit().then(() => {
   var lavaSFX = WA.sound.loadSound("./lava-cave.wav");
 var config = {
-    volume : 0.5,
+    volume : 0.25,
     loop : true,
     rate : 1,
     detune : 1,
