@@ -166,17 +166,7 @@ WA.room.area.onEnter('jumping_finish').subscribe(async () => {
 });
 
 WA.room.area.onEnter('jumping_finish').subscribe(() => {
- 
-    jumpingJacksPopup = WA.ui.openPopup('popup_jumpingjacks', 'Congratulations, you solved the puzzle. \n Check out the Leaderboard to see who else solved the puzzle. \n Click on the logo on the bottom to open the menu and navigate to "Quests" \n\nLeave the puzzle by entering the mouth next to you.', [{
-      label: 'close',
-      className: 'primary',
-      callback: (popup) => {
-        // Close the popup when the "Close" button is pressed.
-        popup.close();
-      }
-    }]);
-    hasShownPopup = true;
-  
+    WA.chat.sendChatMessage('Congratulations, you solved the puzzle. \n Check out the Leaderboard to see who else solved the puzzle. \n Click on the logo on the bottom to open the menu and navigate to "Quests" \n\nLeave the puzzle by entering the mouth next to you.', { scope: 'local', author: 'System' });
 });
 WA.onInit().then(() => {
 WA.room.area.onEnter('exit1').subscribe( () => {WA.nav.goToRoom("/")});
