@@ -6,7 +6,7 @@ import { levelUp } from "@workadventure/quests";
 import { checkPlayerMaterial, mySound, playRandomSound } from "./footstep";
 
 WA.onInit().then(() => {
-  var lavaSFX = WA.sound.loadSound("./public/lava-cave.wav");
+  var lavaSFX = WA.sound.loadSound("./lava-cave.wav");
 var config = {
     volume : 0.5,
     loop : true,
