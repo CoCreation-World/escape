@@ -2793,7 +2793,7 @@
         {
          "name":"mapImage",
          "type":"string",
-         "value":"jumping-map.tmj"
+         "value":"jumping-map.png"
         }, 
         {
          "name":"mapName",
